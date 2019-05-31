@@ -1,0 +1,22 @@
+{
+  "name": "discord-quiz-bot",
+  "version": "0.2.0",
+  "description": "Discord.js Quiz Bot Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMHStudio/DiscordQuizBot.git"
+  },
+  "author": "PMH Studio / PMH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PMHStudio/DiscordQuizBot/issues"
+  },
+  "homepage": "https://github.com/PMHStudio/DiscordQuizBot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
