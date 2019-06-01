@@ -13,11 +13,13 @@ class Quiz {
    * @param {Object} data 퀴즈 데이터 객체
    * @param {String} data.question 퀴즈 문제
    * @param {String} data.explanation 퀴즈 풀이
+   * @param {String} data.image 퀴즈 이미지 Url (선택)
    * @param {Boolean} data.awnser 정답이 O 면 true X면 false
    */
   constructor(data) {
     this.question = data.question
     this.explanation = data.explanation
+    this.image = data.image
     this.awnser = data.awnser
   }
 
@@ -26,11 +28,13 @@ class Quiz {
    * @param {Object} data 퀴즈 데이터 객체
    * @param {String} data.question 퀴즈 문제
    * @param {String} data.explanation 퀴즈 풀이
+   * @param {String} data.image 퀴즈 이미지 Url (선택)
    * @param {Boolean} data.awnser 정답이 O 면 true X면 false
    */
   changeData(data) {
     this.question = data.question
     this.explanation = data.explanation
+    this.image = data.image
     this.awnser = data.awnser
   }
 
@@ -113,9 +117,11 @@ class Bot {
    * 퀴즈봇을 만듭니다
    *  
    * @param {Object} config
+   * @param {String} config.name 봇의 이름
    * @param {String} config.token 봇의 토큰
    * @param {String} config.prefix 봇의 호출명
-   * @param {String} config.activity
+   * @param {String} config.issueUrl 봇의 깃헙 이슈 Url
+   * @param {String} config.activity 봇의 상태표시
    * @returns {Bot}
    * 
    */
@@ -132,9 +138,11 @@ class Bot {
    * 봇의 설정을 변경합니다
     * 
     * @param {Object} config
+    * @param {String} config.name 봇의 이름
     * @param {String} config.token 봇의 토큰
     * @param {String} config.prefix 봇의 호출명
-    * @param {String} config.activity
+    * @param {String} config.issueUrl 봇의 깃헙 이슈 Url
+    * @param {String} config.activity 봇의 상태표시
     * @returns {Bot}
     * 
     */
