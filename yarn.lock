@@ -7,6 +7,13 @@ async-limiter@~1.0.0:
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
   integrity sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
 
+discord-quiz-bot@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/discord-quiz-bot/-/discord-quiz-bot-0.3.1.tgz#59e4f056f88e2262b391568f5b49496c14f24565"
+  integrity sha512-xyUUmJ1guR8c/VLokmKgNs75SngXuF+yNwvvvcgY7H9CIB6UxVghyEVB7zjyk+qlF1Wewb9e81705xFKB4hmsg==
+  dependencies:
+    discord.js "^11.5.1"
+
 discord.js@^11.5.1:
   version "11.5.1"
   resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-11.5.1.tgz#910fb9f6410328581093e044cafb661783a4d9e8"

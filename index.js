@@ -1,6 +1,6 @@
 /**
  * @author PMH Studio
- * @version 0.3.0
+ * @version 0.4.0
  * @module Bot
  */
 
@@ -122,6 +122,7 @@ class Bot {
    * @param {String} config.prefix 봇의 호출명
    * @param {String} config.issueUrl 봇의 깃헙 이슈 Url
    * @param {String} config.activity 봇의 상태표시
+   * @param {QuizCollection | Array.<Quiz> | Array.<{question: String, explanation: String, awnser: boolean}>} config.quizs 퀴즈 모음 (선택)
    * @returns {Bot}
    * 
    */
@@ -131,6 +132,11 @@ class Bot {
     this.prefix = config.prefix
     this.issueUrl = config.issueUrl
     this.activity = config.activity || null
+    if (config.quizs instanceof QuizCollection) {
+      this.quizCollection = config.quizs
+    } else {
+      this.quizCollection = new QuizCollection(config.quizs)
+    }
     return this
   }
 
